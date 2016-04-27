@@ -31,7 +31,7 @@ realtime_srcdir		:= $(abs_top_srcdir)/$(realtime_reldir)
 CPPFLAGS		+= -I$(realtime_srcdir)/include
 CPPFLAGS		+= -I$(realtime_builddir)/include
 CFLAGS			+= -D_GNU_SOURCE
-LDLIBS			+= -lrealtime -lpthread -lrt -lm
+LDLIBS			+= -lrealtime -lrt -lpthread -lm
 LDFLAGS			+= -L$(realtime_builddir)/lib
 
 INSTALL_DIR		:= $(srcdir)

@@ -21,7 +21,7 @@ top_srcdir		?= ../../../..
 include $(top_srcdir)/include/mk/testcases.mk
 include $(abs_srcdir)/../utils/newer_64.mk
 
-LDLIBS			+= -lpthread -lrt
+LDLIBS			+= -lrt -lpthread
 
 %_64: CPPFLAGS += -D_FILE_OFFSET_BITS=64
 

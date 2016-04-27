@@ -29,7 +29,7 @@ cc -o <bin> -lpthread <source>
   same comment as above
 
 Compilation under Solaris 9 (gcc: http://www.sunfreeware.com)
-gcc -std=gnu99 -lpthread -lrt  -o <bin> <source>
+gcc -std=gnu99 -lrt -lpthread  -o <bin> <source>
   same comment as above.
   Note: the -lrt is necessary for test cases using semaphore feature.
 

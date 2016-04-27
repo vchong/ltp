@@ -130,7 +130,7 @@ Semaphores
 ==========
 NPTL
 ----
-If NPTL is installed as default POSIX thread library, set '-lpthread -lrt' in
+If NPTL is installed as default POSIX thread library, set '-lrt -lpthread' in
 LDLIBS.
 
 Otherwise, to build against NPTL, export the following variable:

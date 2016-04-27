@@ -21,6 +21,6 @@ top_srcdir		?= ../../../..
 include $(top_srcdir)/include/mk/testcases.mk
 
 CPPFLAGS		?= -D_POSIX_C_SOURCE=$(shell getconf _POSIX_MESSAGE_PASSING)L
-LDLIBS			+= -lpthread -lrt
+LDLIBS			+= -lrt -lpthread
 
 include $(top_srcdir)/include/mk/generic_leaf_target.mk

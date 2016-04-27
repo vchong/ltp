@@ -27,7 +27,7 @@ include $(top_srcdir)/include/mk/env_pre.mk
 
 CFLAGS			+= -D_GNU_SOURCE -I../include/
 
-LDLIBS			+= -lpthread -lrt -lm
+LDLIBS			+= -lrt -lpthread -lm
 
 LIB			:= librealtime.a
 

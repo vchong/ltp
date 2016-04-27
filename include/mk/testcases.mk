@@ -47,9 +47,11 @@ MAKE_DEPS	:= $(LIBLTP) $(LSN_H)
 # For linux_syscall_numbers.h
 CPPFLAGS	+= -I$(abs_top_builddir)/$(TKI_DIR)
 
+CFLAGS		+= -pthread
+
 INSTALL_DIR	:= testcases/bin
 
-LDLIBS		+= -lltp
+LDLIBS		+= -lltp -lpthread
 
 $(APICMDS_DIR) $(LIBLTP_DIR) $(abs_top_builddir)/$(TKI_DIR): %:
 	mkdir -p "$@"

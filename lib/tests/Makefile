@@ -2,8 +2,8 @@ top_srcdir		?= ../..
 
 include $(top_srcdir)/include/mk/env_pre.mk
 
-CFLAGS			+= -W
-LDLIBS			+= -lltp
+CFLAGS			+= -W -pthread
+LDLIBS			+= -lltp -lpthread
 
 tst_cleanup_once: CFLAGS += -pthread
 
